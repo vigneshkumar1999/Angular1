@@ -1,0 +1,11 @@
+<p>form works!</p>
+<form (ngSubmit)="userDetails()">
+<label>First Name</label>
+<input [formControl]="Fname" type="text">
+<br>
+<p>FirstName is :{{Fname.value}}</p>
+<label>Last Name</label>
+<input [formControl]="Lname" type="text">
+<br>
+<p>LastName is :{{Lname.value}}</p>
+</form>

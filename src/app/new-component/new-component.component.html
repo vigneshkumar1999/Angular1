@@ -1,0 +1,10 @@
+<p>new-component works!</p>
+
+<input [ngModel]="name">
+<p>{{name}}</p>
+
+<p>Parent to Child Communication</p>
+<label>Message</label>
+<input #Message>
+<button (click)="parentToChild(Message.value)">click</button>
+<app-component2></app-component2>
